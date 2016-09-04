@@ -13,7 +13,7 @@ read nethostname
 echo ask netdns
 read netdns
 
-date=`date +%F-%R-S` # date with YYYY-MM-DD-hh-mm-ss
+date=`date +%F-%R-%S` # date with YYYY-MM-DD-hh-mm-ss
 ksname=$nethostname-$date
 
 # hostname.fqdn-YYYY-MM-DD-hh-mm-ss.ks.cfg
