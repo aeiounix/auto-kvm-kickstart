@@ -31,3 +31,5 @@ echo Else, press enter.
 read
 
 virt-install -r 1024 --disk path=/var/lib/libvirt/images/$nethostname.img,size=16 -l http://10.0.0.11/inst -x ks=http://10.0.0.11/inst/$ksname.ks.cfg --name $nethostname
+
+virsh autostart $nethostname
