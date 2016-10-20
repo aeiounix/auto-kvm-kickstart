@@ -14,9 +14,9 @@ echo ask netdns
 read netdns
 
 date=`date +%F-%R-%S` # date with YYYY-MM-DD-hh-mm-ss
-ksname=$nethostname-$date
+ksname=$date-$nethostname
 
-# hostname.fqdn-YYYY-MM-DD-hh-mm-ss.ks.cfg
+# YYYY-MM-DD-hh-mm-ss-hostname.fqdn.ks.cfg
 echo Kickstart configuration file will appear as $ksname.ks.cfg
 echo press enter
 read
